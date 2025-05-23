@@ -1,0 +1,81 @@
+{
+  "granja_datos": {
+    "ubicacion": "Valle Central, Chile",
+    "fecha_actualizacion": "2024-01-15T10:30:00Z",
+    "sensores": [
+      {
+        "id": "SOIL_001",
+        "tipo": "humedad_suelo",
+        "ubicacion": "Sector A - Tomates",
+        "coordenadas": {"lat": -33.4489, "lng": -70.6693},
+        "lecturas": [
+          {
+            "timestamp": "2024-01-15T10:00:00Z",
+            "valor": 45.2,
+            "unidad": "porcentaje",
+            "estado": "normal"
+          },
+          {
+            "timestamp": "2024-01-15T10:15:00Z",
+            "valor": 42.8,
+            "unidad": "porcentaje",
+            "estado": "bajo"
+          }
+        ],
+        "configuracion": {
+          "umbral_minimo": 40,
+          "umbral_maximo": 80,
+          "frecuencia_lectura": "15min"
+        }
+      },
+      {
+        "id": "TEMP_001",
+        "tipo": "temperatura_ambiente",
+        "ubicacion": "Sector A - Tomates",
+        "coordenadas": {"lat": -33.4489, "lng": -70.6693},
+        "lecturas": [
+          {
+            "timestamp": "2024-01-15T10:00:00Z",
+            "valor": 24.5,
+            "unidad": "celsius",
+            "estado": "normal"
+          }
+        ],
+        "configuracion": {
+          "umbral_minimo": 15,
+          "umbral_maximo": 35,
+          "frecuencia_lectura": "5min"
+        }
+      },
+      {
+        "id": "LIGHT_001",
+        "tipo": "luz_solar",
+        "ubicacion": "Sector B - Lechugas",
+        "coordenadas": {"lat": -33.4500, "lng": -70.6700},
+        "lecturas": [
+          {
+            "timestamp": "2024-01-15T10:00:00Z",
+            "valor": 85000,
+            "unidad": "lux",
+            "estado": "normal"
+          }
+        ],
+        "configuracion": {
+          "umbral_minimo": 20000,
+          "umbral_maximo": 100000,
+          "frecuencia_lectura": "10min"
+        }
+      }
+    ],
+    "alertas": [
+      {
+        "id": "ALERT_001",
+        "sensor_id": "SOIL_001",
+        "tipo": "humedad_baja",
+        "mensaje": "Humedad del suelo por debajo del umbral mínimo",
+        "timestamp": "2024-01-15T10:15:00Z",
+        "prioridad": "media"
+      }
+    ]
+  }
+}

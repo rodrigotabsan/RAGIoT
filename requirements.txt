@@ -1,0 +1,10 @@
+# Requirements.txt - Versiones compatibles con Python 3.12
+langchain>=0.1.17
+langchain-community>=0.0.38
+langchain-openai>=0.1.7
+langchain-chroma>=0.1.1
+chromadb>=0.4.24
+python-dotenv>=1.0.1
+streamlit>=1.32.0
+pandas>=2.2.0
+numpy>=1.26.0
